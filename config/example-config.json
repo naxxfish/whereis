@@ -1,0 +1,11 @@
+{
+  "mqtt": {
+    "uri": "mqtt://localhost:1883",
+    "username": "user",
+    "password": "password",
+    "topic": "owntracks/user/device"
+  },
+  "google": {
+    "maps_api_key": "GetYourOwn!"
+  }
+}

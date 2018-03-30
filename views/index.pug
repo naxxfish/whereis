@@ -1,0 +1,23 @@
+html(class="no-js" lang="")
+  head
+    title Where is naxxfish?
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible",content="ie=edge")
+    meta(name="description",content="Where is naxxfish?")
+    link(rel="manifest", href="site.webmanifest")
+    link(rel="stylesheet", href="css/normalize.css")
+    link(rel="stylesheet", href="css/main.css")
+    
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.14.0/css/jquery.terminal.min.css", rel="stylesheet")
+    
+  body
+    div#map
+    div#placeholder
+      div#terminal
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js", integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=", crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.14.0/js/jquery.terminal.min.js")
+    script( src='/socket.io/socket.io.js' )
+    script( src="https://www.google.com/maps/api/js?key=" + google.maps_api_key, async, defer)
+    script( src='js/terminal.js' )
+    script( src='js/map.js' )
+    script( src='js/main.js' , async, defer)
