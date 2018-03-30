@@ -9,6 +9,7 @@
   "version": "0.0.1",
   "dependencies": {
     "bunyan": "^1.8.12",
+    "bunyan-middleware": "^0.8.0",
     "chai": "^4.1.2",
     "compression": "^1.7.2",
     "debug": "^3.1.0",
@@ -31,7 +32,7 @@
     "url": "https://github.com/naxxfish/whereis/issues"
   },
   "repository": {
-    "type":"git",
+    "type": "git",
     "url": "https://github.com/naxxfish/whereis.git"
   },
   "engines": {
