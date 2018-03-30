@@ -209,6 +209,12 @@ bunyan-middleware@^0.8.0:
     "@types/express" "^4.0.35"
     uuid "^3.0.0"
 
+bunyan-pretty@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/bunyan-pretty/-/bunyan-pretty-0.0.1.tgz#d7a8afe592779804b1ca0453a573d9eec084cb3b"
+  dependencies:
+    through "^2.3.6"
+
 bunyan@^1.8.12:
   version "1.8.12"
   resolved "https://registry.yarnpkg.com/bunyan/-/bunyan-1.8.12.tgz#f150f0f6748abdd72aeae84f04403be2ef113797"
@@ -1368,6 +1374,10 @@ through2@^2.0.1, through2@^2.0.2, through2@~2.0.0:
   dependencies:
     readable-stream "^2.1.5"
     xtend "~4.0.1"
+
+through@^2.3.6:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
 
 to-absolute-glob@^2.0.0:
   version "2.0.2"
