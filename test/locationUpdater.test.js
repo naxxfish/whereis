@@ -4,8 +4,17 @@ const sinon = require('sinon')
 const chai = require('chai')
 
 describe('locationUpdater', () => {
-  describe('connect', () => {
-    it('should try to connect to mqtt broker', () => {
+  describe('constructor', () => {
+    it('should fail to be created if any arguments are missing', () => {
+      chai.expect(() => {
+        var updater = new LocationUpdater({
+          mqtt: { }
+        })
+      }).to.throw()
+    })
+  })
+  describe('connect',  () => {
+    it('should connect to mqtt broker', () => {
       var mock = sinon.mock(mqtt)
       var expectation = mock.expects('connect')
       var updater = new LocationUpdater({
@@ -17,13 +26,6 @@ describe('locationUpdater', () => {
       })
       updater.connect()
       mock.verify()
-    })
-    it('should fail to be created if any arguments are missing', () => {
-      chai.expect(() => {
-        var updater = new LocationUpdater({
-          mqtt: { }
-        })
-      }).to.throw()
     })
   })
 })
