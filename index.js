@@ -38,6 +38,7 @@ app.get('/', (req, res) => {
 app.use('/', express.static(path.join(__dirname, 'public')))
 
 let locationUpdater = new LocationUpdater(config)
+
 locationUpdater.on('location', (location) => {
   console.log(location)
 })
@@ -52,6 +53,8 @@ io.on('connection', (socket) => {
 app.get('/api/location', (req, res) => {
   res.json(locationUpdater.getLocation())
 })
+
+location.updater.connect()
 
 server.listen(3000, () => {
   console.log('listening on port 3000')
